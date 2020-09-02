@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Multiple Object Detection</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body class="disable-select">
+    <h1>Machine Learning Concept : Object Detection </h1>
+    <h2>Multiple  Object Detection</h2>
+     <p>This Proof of Concept is based on a Machine Learning Model trained using Tensorflow. The Model can identify diffrent objects with a high degree of accuracy ~ >80%.</p>
+     <p>To test it, once this page loads wait for 1-2 minutes for the Model to load. Once its ready, the <strong>"Enable Webcam"</strong> button below will be clickable. Click the button to test the functionality of the model </p>
+    
+    <section id="demos" class="invisible">
+
+      <p>Hold some objects up close to your webcam to get a real-time classification! When ready, click <strong>"Enable Webcam"</strong> below and grant access to the webcam when the browser asks (check the top left of your window)</p>
+      
+      <div id="liveView" class="camView">
+        <button id="webcamButton">Enable Webcam</button>
+          <div>
+            <video id="webcam" autoplay width="640" height="480"></video>
+          </div>
+        
+      </div>
+    </section>
+    <footer class="footer">
+      <div style="background-color: black; color: cornflowerblue; text-align: center;"> 
+        Project By: <a style="color: cornflowerblue" href="lule.ml">LuleD</a>
+      </div>
+    </footer>
+     <!-- Import TensorFlow.js library -->
+     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+     <!-- Load the coco-ssd model to use to recognize things in images -->
+     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+     
+     <!-- Import the page's JavaScript to do some stuff -->
+     <script src="script.js" defer></script>
+  </body>
+  
+
+    
+  
+</html>
